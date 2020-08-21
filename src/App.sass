@@ -1,0 +1,41 @@
+$background-color: #fafafa
+//INTRO
+.intro
+  height: 40vh
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+
+//NAVBAR  
+.navbar
+  width: 260px
+  margin: 0 auto
+  position: sticky
+  top: 0
+  background-color: $background-color
+  & > ul
+    padding: 0
+    display: flex
+    justify-content: center
+    & > a
+      text-decoration: none
+      &:hover
+        color: red
+      & > li
+        display: inline
+        margin: 8px //rem?
+      
+//ABOUT
+.about
+  height: 50vh
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+
+////////OTHEr
+.section
+  margin: 12rem 0
+
+
+.card
+  background-color: $background-color !important
