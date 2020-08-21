@@ -4,10 +4,10 @@ function Navbar() {
   return (
     <nav className="navbar">
       <ul>
-        <li><a href="#about"   >About</a></li>
-        <li><a href="#skills"  >Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact" >Contact</a></li>
+        <a href="#about"   ><li>About</li></a>
+        <a href="#skills"  ><li>Skills</li></a>
+        <a href="#projects"><li>Projects</li></a>
+        <a href="#contact" ><li>Contact</li></a>
       </ul>
     </nav>
   );
