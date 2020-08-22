@@ -1,9 +1,10 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
+import { ISection } from '../interfaces';
 
-function Contact() {
+function Contact( {contactRef}: ISection ) {
   return (
-    <section id="contact" className="section">
+    <section id="3" className="section" ref={contactRef}>
       <Typography variant="h2">
         Contact
       </Typography>

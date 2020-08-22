@@ -1,9 +1,10 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
+import { ISection } from '../interfaces';
 
-function Intro() {
+function Intro( {introRef}: ISection) {
   return (
-    <div className="intro">
+    <div id="intro" className="intro" ref={introRef}>
       <Typography variant="h1" align="center">
         Matija Turčec
       </Typography>

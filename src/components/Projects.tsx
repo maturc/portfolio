@@ -4,11 +4,12 @@ import lavander from '../assets/lavander.png';
 import itcomp from '../assets/itcomp.png';
 import algovisualize from '../assets/algovisualize.png';
 import { Typography } from '@material-ui/core';
+import { ISection } from '../interfaces';
 
-function Projects() {
+function Projects( {projectsRef}:ISection ) {
   return (
     <>
-    <section id="projects">
+    <section id="2" ref={projectsRef}>
       <Typography variant="h2">
           Projects
       </Typography>
