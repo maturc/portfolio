@@ -3,7 +3,7 @@ import { Typography } from '@material-ui/core';
 
 function About() {
   return (
-    <section className="about">
+    <section id="about" className="about">
       <Typography variant="h2">
         About
       </Typography>

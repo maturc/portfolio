@@ -3,7 +3,7 @@ import { Typography } from '@material-ui/core';
 
 function Contact() {
   return (
-    <section className="section">
+    <section id="contact" className="section">
       <Typography variant="h2">
         Contact
       </Typography>

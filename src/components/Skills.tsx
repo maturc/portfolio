@@ -3,7 +3,7 @@ import { Typography } from '@material-ui/core';
 
 function Skills() {
   return (
-    <section className="section">
+    <section id="skills" className="section skills">
       <Typography variant="h2">
         Web development skills
       </Typography>
