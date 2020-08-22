@@ -1,13 +1,14 @@
 import React from 'react';
+import { INavbar } from '../interfaces';
 
-function Navbar() {
+function Navbar( {aboutRefNav, skillsRefNav, projectsRefNav, contactRefNav}: INavbar ) {
   return (
     <nav className="navbar">
       <ul>
-        <a href="#about"   ><li>About</li></a>
-        <a href="#skills"  ><li>Skills</li></a>
-        <a href="#projects"><li>Projects</li></a>
-        <a href="#contact" ><li>Contact</li></a>
+        <a href="#about"    ref={aboutRefNav}   ><li>About</li></a>
+        <a href="#skills"   ref={skillsRefNav}  ><li>Skills</li></a>
+        <a href="#projects" ref={projectsRefNav}><li>Projects</li></a>
+        <a href="#contact"  ref={contactRefNav} ><li>Contact</li></a>
       </ul>
     </nav>
   );
