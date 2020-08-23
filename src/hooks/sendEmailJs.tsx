@@ -1,7 +1,8 @@
 import emailjs from 'emailjs-com';
+import { ISendEmail } from '../interfaces';
 
-function sendEmailJs(name: string, email: string, message: string, setOpenSuccess: React.Dispatch<React.SetStateAction<boolean>>, setOpenError: React.Dispatch<React.SetStateAction<boolean>>, setLoading: React.Dispatch<React.SetStateAction<boolean>>) {
-  emailjs.init(process.env.REACT_EMAILJS_UID);
+const sendEmailJs: ISendEmail = (name, email, message, setOpenSuccess, setOpenError, setLoading) => {
+  emailjs.init(process.env.REACT_APP_EMAILJS_UID as string);
   const templateParams = {
     name: name,
     email: email,
