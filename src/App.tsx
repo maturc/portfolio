@@ -41,6 +41,10 @@ function App() {
           skillsRefNav={skillsRefNav}
           projectsRefNav={projectsRefNav}
           contactRefNav={contactRefNav}
+          aboutRef={aboutRef}
+          skillsRef={skillsRef}
+          projectsRef={projectsRef}
+          contactRef={contactRef}
         />
         <About    aboutRef={aboutRef} />
         <Skills   skillsRef={skillsRef} />
