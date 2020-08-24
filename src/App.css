@@ -106,4 +106,45 @@
 .card__description {
   padding: 8px;
 }
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 606px;
+  margin-left: 8px;
+}
+
+.contact__form > * {
+  margin: 4px !important;
+}
+
+.contact__button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contact__button-wrapper-inner {
+  position: relative;
+}
+
+.contact__button-progress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -12px;
+  margin-left: -12px;
+}
+
+.test {
+  background-color: green;
+}
 /*# sourceMappingURL=App.css.map */
