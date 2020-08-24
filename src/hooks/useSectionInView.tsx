@@ -1,7 +1,8 @@
 import { useEffect } from "react";
+import { ISectionInView } from "../interfaces";
 
 
-function useSectionInView( sections: Array<HTMLElement>, navArray: Array<HTMLElement> ) {
+const useSectionInView: ISectionInView = (sections, navArray) => {
   const options = {
     root: null,
     teshold: 1,
