@@ -5,17 +5,23 @@ export type ICard = {
   body: string;
 }
 export type ISection = {
-  //[name: string]: React.MutableRefObject<null>;
-  [name: string]: any;
+  [name: string]: React.MutableRefObject<any>;
 }
 export type INavbar = {
   aboutRefNav:    any;
   skillsRefNav:   any;
   projectsRefNav: any;
   contactRefNav:  any;
+  aboutRef:    any;
+  skillsRef:   any;
+  projectsRef: any;
+  contactRef:  any;
 }
 export type ISendEmail = {
   (name: string, email: string, message: string, setOpenSuccess: React.Dispatch<React.SetStateAction<boolean>>, setOpenError: React.Dispatch<React.SetStateAction<boolean>>, setLoading: React.Dispatch<React.SetStateAction<boolean>>): void;
+}
+export type ISectionInView = {
+  (sections: Array<HTMLElement>, navArray: Array<HTMLElement>): void;
 }
 
 
