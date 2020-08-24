@@ -45,7 +45,7 @@ function Contact( {contactRef}: ISection ) {
         Email: <a href="mailto:turcec.matija@gmail.com">turcec.matija@gmail.com</a>
       </Typography>
 
-      <form id="contact-form" onSubmit={ el => handleSubmit(el) }>
+      <form id="contact-form" className="contact__form" onSubmit={ el => handleSubmit(el) }>
         <TextField
           id="name"
           label="Name"
@@ -74,10 +74,14 @@ function Contact( {contactRef}: ISection ) {
           required={true}
           onChange={ el => setMessage(el.target.value) }
         />
-        <Button type="submit" disabled={loading}>
-          Send message
-        </Button>
-        {loading && <CircularProgress size={24} />}
+        <div className="contact__button-wrapper">
+          <div className="contact__button-wrapper-inner">
+            <Button type="submit" disabled={loading} className="contact__button">
+              Send message
+            </Button>
+            {loading && <CircularProgress size={24} className="contact__button-progress" />}
+          </div>
+        </div>
       </form>
       <Snackbar open={openSuccess} autoHideDuration={4000} onClose={ () => handleClose(setOpenSuccess) }>
         <Alert onClose={ () => handleClose(setOpenSuccess) } severity="success">
