@@ -14,10 +14,38 @@ function Projects( {projectsRef}:ISection ) {
           Projects
       </Typography>
       <div className="projects">
-        <CardComponent imgUrl={lavander}      imgAlt="Chat application"      title="Lavander" body="Fullstack chat application"/>
-        <CardComponent imgUrl={itcomp}        imgAlt="Static website"        title="ITcomp" body="Static website"/>
-        <CardComponent imgUrl={algovisualize} imgAlt="Interactive algorithm" title="AlgoVizualize" body="Interactive breadth first search algorithm"/>
-        <CardComponent imgUrl={lavander}      imgAlt=""                      title="More" body="Check out more of my work"/>
+        <CardComponent
+          imgUrl={lavander}
+          imgAlt="Chat application"
+          title="Lavander"
+          body="Fullstack chat application"
+          linkToWebsite="https://lavander-chat.herokuapp.com/"
+          linkToSource="https://github.com/maturc/lavander"
+        />
+        <CardComponent
+          imgUrl={itcomp}
+          imgAlt="Static website"
+          title="ITcomp"
+          body="Static website"
+          linkToWebsite="http://maturc.github.io/ITcomp"
+          linkToSource="https://github.com/maturc/ITcomp"
+        />
+        <CardComponent
+          imgUrl={algovisualize}
+          imgAlt="Interactive algorithm"
+          title="AlgoVizualize"
+          body="Interactive breadth first search algorithm"
+          linkToWebsite="https://maturc.github.io/algo-visualize/index"
+          linkToSource="https://github.com/maturc/algo-visualize"
+        />
+        <CardComponent
+          imgUrl={lavander}
+          imgAlt=""
+          title="More"
+          body="Check out more of my work"
+          linkToWebsite=""
+          linkToSource="https://github.com/maturc/WebDev-practice-projects"
+        />
       </div>
     </section>
     </>
