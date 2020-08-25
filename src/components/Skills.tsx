@@ -9,27 +9,30 @@ function Skills( {skillsRef}: ISection ) {
         Web development skills
       </Typography>
       <Typography variant="body1" component="ul">
-        <li>Technologies:</li>
+        <li>Languages:</li>
           <ul>
-            <li>JavaScript, Typescript, Node, Git, SASS, CSS, HTML, jQuery</li>
+            <li><span>JavaScript</span> <span>Typescript</span> <span>HTML</span> <span>CSS</span></li>
           </ul>
         <li>Frameworks:</li>
           <ul>
-            <li>React, Express, Material UI</li>
+            <li><span>React</span> <span>Express</span> <span>Material UI</span></li>
           </ul>
         <li>Database:</li>
           <ul>
-            <li>MySQL, MongoDB</li>
+            <li><span>MySQL</span> <span>MongoDB</span></li>
+          </ul>
+        <li>Technologies:</li>
+          <ul>
+            <li><span>Git</span> <span>Node</span> <span>SASS</span> <span>jQuery</span></li>
           </ul>
         <li>Bundlers:</li>
           <ul>
-            <li>Webpack</li>
+            <li><span>Webpack</span></li>
           </ul>
         <li>Tools:</li>
           <ul>
-            <li>Photoshop, Microsoft Office, Open Office</li>
+            <li><span>Photoshop</span> <span>Microsoft Office</span> <span>Open Office</span></li>
           </ul>
-        <li>BEM methodology?</li>
       </Typography>
     </section>
   );
