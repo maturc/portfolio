@@ -33,7 +33,6 @@ function App() {
   return (
     <>
       <CssBaseline />
-      <div style={{position: "fixed", top:"0", right:"0", left:"0", bottom:"0", border: "1px solid blue", maxHeight: "100vh", width: "100%", margin: "5% 0px 90%"}}></div>
       <Container>
         <Intro introRef={introRef} />
         <Navbar
@@ -46,6 +45,7 @@ function App() {
           projectsRef={projectsRef}
           contactRef={contactRef}
         />
+        <div style={{height: "15vh", width: "100%"}}></div>
         <About    aboutRef={aboutRef} />
         <Skills   skillsRef={skillsRef} />
         <Projects projectsRef={projectsRef} />
