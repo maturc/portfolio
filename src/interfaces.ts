@@ -3,6 +3,8 @@ export type ICard = {
   imgAlt: string;
   title: string;
   body: string;
+  linkToWebsite: string;
+  linkToSource: string;
 }
 export type ISection = {
   [name: string]: React.MutableRefObject<any>;
