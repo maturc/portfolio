@@ -8,7 +8,7 @@ function Intro( {introRef}: ISection) {
       <Typography variant="h1" align="center">
         Matija Turčec
       </Typography>
-      <Typography variant="subtitle1" component="h2" align="center">
+      <Typography variant="subtitle1" component="h2" align="center" className="intro__subtitle">
         Web Developer
       </Typography>
     </div>
