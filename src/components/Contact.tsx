@@ -3,6 +3,9 @@ import { Typography, TextField, Button, Snackbar, CircularProgress } from '@mate
 import { ISection } from '../interfaces';
 import sendEmailJs from '../hooks/sendEmailJs';
 import MuiAlert, { AlertProps } from '@material-ui/lab/Alert';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import PhoneIcon from '@material-ui/icons/Phone';
 
 function Alert(props: AlertProps) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -37,20 +40,24 @@ function Contact( {contactRef}: ISection ) {
     }
   }, [openSuccess, setName, setEmail, setMessage]);
   return (
-    <section id="3" className="section" ref={contactRef}>
+    <section id="3" className="section contact" ref={contactRef}>
       <Typography variant="h2">
         Contact
       </Typography>
       <Typography variant="body1">
-        Email: <a href="mailto:turcec.matija@gmail.com">turcec.matija@gmail.com</a>
+        <PhoneIcon className="contact__icon" /><a href="tel:+385 95 505 2586">+385 95 505 2586</a>
       </Typography>
-
+      <Typography variant="body1">
+        <MailOutlineIcon className="contact__icon" /><a href="mailto:turcec.matija@gmail.com">turcec.matija@gmail.com</a>
+      </Typography>
+      <Typography variant="body1">
+        <GitHubIcon className="contact__icon" /><a href="https://github.com/maturc">https://github.com/maturc</a>
+      </Typography>
       <form id="contact-form" className="contact__form" onSubmit={ el => handleSubmit(el) }>
         <TextField
           id="name"
           label="Name"
           variant="outlined"
-          autoFocus={true}
           value={name}
           required={true}
           onChange={ el => setName(el.target.value) }
@@ -76,7 +83,7 @@ function Contact( {contactRef}: ISection ) {
         />
         <div className="contact__button-wrapper">
           <div className="contact__button-wrapper-inner">
-            <Button type="submit" disabled={loading} className="contact__button">
+            <Button type="submit" disabled={loading} className="contact__button button" color="primary" variant="contained" disableRipple={true}>
               Send message
             </Button>
             {loading && <CircularProgress size={24} className="contact__button-progress" />}
