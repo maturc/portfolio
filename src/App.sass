@@ -1,10 +1,23 @@
 $background-color: #fafafa
+
+html
+  overflow-x: hidden
+h1, h2
+  font-family: 'Lora', serif !important
+h1
+  color: #3366c1
+h2
+  margin-bottom: 16px !important
+
 //INTRO
 .intro
   height: 40vh
   display: flex
   flex-direction: column
   justify-content: flex-end
+  &__subtitle
+    color: rgba(0,0,0,0.6)
+    margin: 0 !important
 
 //NAVBAR  
 .navbar
@@ -13,21 +26,34 @@ $background-color: #fafafa
   position: sticky
   top: 0
   background-color: $background-color
+  border-radius: 8px
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.3)
+  z-index: 10
   & > ul
-    padding: 0
+    padding: 4px
     display: flex
     justify-content: center
     & > a
+      font-size: 0.9rem
       text-decoration: none
+      color: #0045c1
+      transform: translateY(0)
+      transition: transform 0.1s
       &:hover
-        color: red
+        color: #c40000
+      &:active
+        transform: translateY(1px)
       & > li
         display: inline
-        margin: 8px //rem?
+        margin: 8px
+  &__current
+    font-weight: bold
+    color: #c40000 !important
+
       
 //ABOUT
 .about
-  height: 50vh
+  height: 35vh
   display: flex
   flex-direction: column
   justify-content: flex-end
@@ -38,10 +64,29 @@ $background-color: #fafafa
   & > ul
     list-style: none
     padding: 0
+    color: rgba(0,0,0,0.7)
     & > ul
-      padding-left: 20px
+      padding: 4px
+      padding-left: 0
+      color: rgba(0, 0, 0, 0.87)
       & > li
         list-style: none
+        margin: 8px
+        margin-left: 0
+        & > span
+          background-color: #3366c1
+          color: white
+          border-radius: 20px
+
+          padding: 8px 16px
+          margin: 8px
+          margin-top: -4px
+          margin-bottom: 16px
+          min-width: 80px
+          display: inline-block
+          text-align: center
+          & + span
+            margin-left: -4px
 
 
 ////////OTHEr
@@ -53,11 +98,13 @@ $background-color: #fafafa
   display: flex
   flex-direction: row
   flex-wrap: wrap
-  margin: 8px
+  margin: 0 -8px
 .card
-  flex: 1 1 400px
-  margin: 6px
+  flex: 1 1 410px
+  margin: 8px
   background-color: $background-color !important
+  border: 1px solid rgba(0,0,0,0.1)
+  border-top: 10px solid #3366c1
   &__img
     max-height: 100%
     max-width: 100%
@@ -65,17 +112,26 @@ $background-color: #fafafa
     width: auto
   &__description
     padding: 8px
-
+  &__buttons
+    display: flex
+    & > button
+      flex: 1 1 50%
+      margin-top: 8px !important
+      & + button
+        margin-left: 8px !important
 
 //CONTACT
 .contact
   &__form
     display: flex
     flex-direction: column
-    max-width: 606px
-    margin-left: 8px
-    & > *
+    max-width: 604px
+    margin-left: -4px
+    margin-top: 16px
+    & > div
       margin: 4px !important
+      & + div
+        margin-top: 12px !important
 
   &__button
     &-wrapper
@@ -89,6 +145,40 @@ $background-color: #fafafa
       left: 50%
       margin-top: -12px
       margin-left: -12px
+  & > p
+    display: flex
+    & + p
+      margin-top: 4px
+  &__icon
+    margin-right: 4px
+    color: rgba(0,0,0,0.87)
 
-.test
-  background-color: green
+.button
+  background-color: #3366c1 !important
+  transform: translateY(0)
+  transition: transform 2s
+  &:hover
+    background-color: #1d396a !important
+  &:active
+    transform: translateY(1px)
+
+//ANIMATIONS
+.about
+  opacity: 0
+  animation-delay: 0.4s
+.section_animation
+  animation-name: view-entry
+  animation-duration: 0.6s
+  animation-timing-function: ease-out
+  animation-fill-mode: forwards
+
+@keyframes view-entry
+  from
+    transform: translateX(100px)
+    opacity: 0
+  to
+    transform: translateX(0)
+    opacity: 1
+
+section
+  opacity: 0
