@@ -2,12 +2,28 @@ $background-color: #fafafa
 
 html
   overflow-x: hidden
+body
+  padding-right: 0 !important
+  overflow: visible !important
 h1, h2
   font-family: 'Lora', serif !important
 h1
   color: #3366c1
 h2
   margin-bottom: 16px !important
+
+//Language dropdown
+.language__dropdown
+  position: fixed
+  z-index: 99
+  background-color: $background-color
+  border-radius: 0 6px
+  right: 8px
+  & > button
+    transform: translateY(0)
+    transition: transform 0.1s
+    &:active
+      transform: translateY(1px)
 
 //INTRO
 .intro

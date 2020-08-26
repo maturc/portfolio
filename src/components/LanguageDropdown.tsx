@@ -29,6 +29,7 @@ function LanguageDropdown( {language, setLanguage}: any ) {
         keepMounted
         open={Boolean(anchorEl)}
         onClose={()=>handleClose(undefined)}
+        style={{top: "10px"}}
       >
         <MenuItem disableRipple={true} onClick={()=>handleClose(hrvatski)}>Hrvatski</MenuItem>
         <MenuItem disableRipple={true} onClick={()=>handleClose(english)}>English</MenuItem>

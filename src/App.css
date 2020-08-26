@@ -2,6 +2,11 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  padding-right: 0 !important;
+  overflow: visible !important;
+}
+
 h1, h2 {
   font-family: 'Lora', serif !important;
 }
@@ -12,6 +17,28 @@ h1 {
 
 h2 {
   margin-bottom: 16px !important;
+}
+
+.language__dropdown {
+  position: fixed;
+  z-index: 99;
+  background-color: #fafafa;
+  border-radius: 0 6px;
+  right: 8px;
+}
+
+.language__dropdown > button {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
+}
+
+.language__dropdown > button:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
 }
 
 .intro {
