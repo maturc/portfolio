@@ -10,10 +10,10 @@ function Navbar( {aboutRefNav, skillsRefNav, projectsRefNav, contactRefNav, abou
   return (
     <nav className="navbar">
       <ul>
-        <a href="#0" onClick={e => handleClick(e, aboutRef)}    ref={aboutRefNav}   ><li>{translation.about}</li></a>
-        <a href="#1" onClick={e => handleClick(e, skillsRef)}   ref={skillsRefNav}  ><li>{translation.skills}</li></a>
-        <a href="#2" onClick={e => handleClick(e, projectsRef)} ref={projectsRefNav}><li>{translation.projects}</li></a>
-        <a href="#3" onClick={e => handleClick(e, contactRef)}  ref={contactRefNav} ><li>{translation.contact}</li></a>
+        <li><a href="#0" onClick={e => handleClick(e, aboutRef)}    ref={aboutRefNav}   >{translation.about}</a></li>
+        <li><a href="#1" onClick={e => handleClick(e, skillsRef)}   ref={skillsRefNav}  >{translation.skills}</a></li>
+        <li><a href="#2" onClick={e => handleClick(e, projectsRef)} ref={projectsRefNav}>{translation.projects}</a></li>
+        <li><a href="#3" onClick={e => handleClick(e, contactRef)}  ref={contactRefNav} >{translation.contact}</a></li>
       </ul>
     </nav>
   );
