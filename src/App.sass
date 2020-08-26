@@ -9,8 +9,19 @@ h1, h2
   font-family: 'Lora', serif !important
 h1
   color: #3366c1
+  @media only screen and (max-width: 646px)
+    line-height: 1 !important
+  @media only screen and (max-width: 420px)
+    font-size: 4rem !important
 h2
   margin-bottom: 16px !important
+  line-height: 1 !important
+  @media only screen and (max-width: 490px)
+    font-size: 3rem !important
+  @media only screen and (max-width: 400px)
+    font-size: 2.6rem !important
+  @media only screen and (max-width: 350px)
+    font-size: 2.4rem !important
 
 //Language dropdown
 .language__dropdown
@@ -19,11 +30,27 @@ h2
   background-color: $background-color
   border-radius: 0 6px
   right: 8px
+  @media only screen and (max-width: 415px)
+    position: absolute
   & > button
     transform: translateY(0)
     transition: transform 0.1s
     &:active
       transform: translateY(1px)
+    @media only screen and (max-width: 490px) and (min-width: 415px)
+      padding-left: 0
+      padding-right: 0
+    @media only screen and (max-width: 480px) and (min-width: 415px)
+      min-width: 30px
+
+  &-lang
+    display: flex
+    @media only screen and (max-width: 610px) and (min-width: 415px)
+      display: none
+  &-expand
+    display: flex
+    @media only screen and (max-width: 450px) and (min-width: 415px)
+      display: none
 
 //INTRO
 .intro
@@ -34,10 +61,11 @@ h2
   &__subtitle
     color: rgba(0,0,0,0.6)
     margin: 0 !important
+    font-size: 1rem !important
 
 //NAVBAR  
 .navbar
-  width: 260px
+  width: max-content
   margin: 0 auto
   position: sticky
   top: 0
@@ -49,19 +77,19 @@ h2
     padding: 4px
     display: flex
     justify-content: center
-    & > a
-      font-size: 0.9rem
-      text-decoration: none
-      color: #0045c1
+    & > li
+      display: inline
       transform: translateY(0)
       transition: transform 0.1s
-      &:hover
-        color: #c40000
       &:active
         transform: translateY(1px)
-      & > li
-        display: inline
+      & > a
+        text-decoration: none
+        font-size: 0.9rem
         margin: 8px
+        color: #0045c1
+        &:hover
+          color: #c40000
   &__current
     font-weight: bold
     color: #c40000 !important
@@ -81,7 +109,7 @@ h2
     list-style: none
     padding: 0
     color: rgba(0,0,0,0.7)
-    & > ul
+    & > li > ul
       padding: 4px
       padding-left: 0
       color: rgba(0, 0, 0, 0.87)
@@ -101,11 +129,11 @@ h2
           display: inline-block
           text-align: center
           font-weight: 500
-          & + span
-            margin-left: -4px
+          font-size: 0.9rem
+          margin-right: -4px
 
 
-////////OTHEr
+////////OTHER
 .section
   margin: 12rem 0
 
@@ -128,6 +156,8 @@ h2
     width: auto
   &__description
     padding: 8px
+    & > p
+      color: rgba(0,0,0,0.7)
   &__buttons
     display: flex
     & > button
@@ -179,6 +209,8 @@ h2
     transform: translateY(1px)
   &:focus
     background-color: #1d396a !important
+  @media only screen and (max-width: 442px)
+    line-height: 1.5 !important
 
 //ANIMATIONS
 .about
