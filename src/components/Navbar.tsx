@@ -1,7 +1,7 @@
 import React from 'react';
 import { INavbar } from '../interfaces';
 
-function Navbar( {aboutRefNav, skillsRefNav, projectsRefNav, contactRefNav, aboutRef, skillsRef, projectsRef, contactRef}: INavbar ) {
+function Navbar( {aboutRefNav, skillsRefNav, projectsRefNav, contactRefNav, aboutRef, skillsRef, projectsRef, contactRef, translation}: INavbar ) {
   function handleClick( e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, refObject: React.MutableRefObject<any> ) {
     e.preventDefault();
     refObject.current.scrollIntoView({behavior: "smooth"});
@@ -10,10 +10,10 @@ function Navbar( {aboutRefNav, skillsRefNav, projectsRefNav, contactRefNav, abou
   return (
     <nav className="navbar">
       <ul>
-        <a href="#0" onClick={e => handleClick(e, aboutRef)}    ref={aboutRefNav}   ><li>About</li></a>
-        <a href="#1" onClick={e => handleClick(e, skillsRef)}   ref={skillsRefNav}  ><li>Skills</li></a>
-        <a href="#2" onClick={e => handleClick(e, projectsRef)} ref={projectsRefNav}><li>Projects</li></a>
-        <a href="#3" onClick={e => handleClick(e, contactRef)}  ref={contactRefNav} ><li>Contact</li></a>
+        <a href="#0" onClick={e => handleClick(e, aboutRef)}    ref={aboutRefNav}   ><li>{translation.about}</li></a>
+        <a href="#1" onClick={e => handleClick(e, skillsRef)}   ref={skillsRefNav}  ><li>{translation.skills}</li></a>
+        <a href="#2" onClick={e => handleClick(e, projectsRef)} ref={projectsRefNav}><li>{translation.projects}</li></a>
+        <a href="#3" onClick={e => handleClick(e, contactRef)}  ref={contactRefNav} ><li>{translation.contact}</li></a>
       </ul>
     </nav>
   );

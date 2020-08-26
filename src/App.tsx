@@ -8,8 +8,13 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import useSectionInView from './hooks/useSectionInView';
+import LanguageDropdown from './components/LanguageDropdown';
+import english from './languages/english.json';
 
 function App() {
+  //language
+  const [language, setLanguage] = useState(english);
+
   const [sectionArray, setSectionArray] = useState<Array<HTMLElement>>([]);
   const [navArray, setNavArray] = useState<Array<HTMLElement>>([]);
   //nav refs
@@ -34,6 +39,7 @@ function App() {
     <>
       <CssBaseline />
       <Container>
+        <LanguageDropdown language={language.language} setLanguage={setLanguage} />
         <Intro introRef={introRef} />
         <Navbar
           aboutRefNav={aboutRefNav}
@@ -44,12 +50,13 @@ function App() {
           skillsRef={skillsRef}
           projectsRef={projectsRef}
           contactRef={contactRef}
+          translation={language.nav}
         />
         <div style={{height: "15vh", width: "100%"}}></div>
-        <About    aboutRef={aboutRef} />
-        <Skills   skillsRef={skillsRef} />
-        <Projects projectsRef={projectsRef} />
-        <Contact  contactRef={contactRef} />
+        <About    aboutRef={aboutRef}       translation={language.about} />
+        <Skills   skillsRef={skillsRef}     translation={language.skills} />
+        <Projects projectsRef={projectsRef} translation={language.projects} />
+        <Contact  contactRef={contactRef}   translation={language.contact} />
         {/* footer?? - quick nav links? created by and stuff??
         back to top button? */}
       </Container>

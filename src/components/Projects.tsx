@@ -6,44 +6,53 @@ import algovisualize from '../assets/algovisualize.png';
 import { Typography } from '@material-ui/core';
 import { ISection } from '../interfaces';
 
-function Projects( {projectsRef}:ISection ) {
+function CardComponentExpanded(props: any) {
+  return ( 
+    <CardComponent
+      {...props}
+      imgAlt={props.projectName.alt}
+      title={props.projectName.header}
+      body={props.projectName.paragraph}
+      websiteButton={props.translation.btnWebsite}
+      sourceButton={props.translation.btnSource}
+    />
+  );
+}
+
+function Projects( {projectsRef, translation}:ISection ) {
   return (
     <>
     <section id="2" ref={projectsRef}>
       <Typography variant="h2">
-          Projects
+        {translation.header}
       </Typography>
       <div className="projects">
-        <CardComponent
+        <CardComponentExpanded
           imgUrl={lavander}
-          imgAlt="Chat application"
-          title="Lavander"
-          body="Fullstack chat application"
+          translation={translation}
+          projectName={translation.lavander}
           linkToWebsite="https://lavander-chat.herokuapp.com/"
           linkToSource="https://github.com/maturc/lavander"
         />
-        <CardComponent
+        <CardComponentExpanded
           imgUrl={itcomp}
-          imgAlt="Static website"
-          title="ITcomp"
-          body="Static website"
+          translation={translation}
+          projectName={translation.itcomp}
           linkToWebsite="http://maturc.github.io/ITcomp"
           linkToSource="https://github.com/maturc/ITcomp"
         />
-        <CardComponent
+        <CardComponentExpanded
           imgUrl={algovisualize}
-          imgAlt="Interactive algorithm"
-          title="AlgoVizualize"
-          body="Interactive breadth first search algorithm"
+          translation={translation}
+          projectName={translation.algovisualize}
           linkToWebsite="https://maturc.github.io/algo-visualize/index"
           linkToSource="https://github.com/maturc/algo-visualize"
         />
-        <CardComponent
+        <CardComponentExpanded
           imgUrl={lavander}
-          imgAlt=""
-          title="More"
-          body="Check out more of my work"
-          linkToWebsite=""
+          translation={translation}
+          projectName={translation.more}
+          moreButton={translation.btnMore}
           linkToSource="https://github.com/maturc/WebDev-practice-projects"
         />
       </div>

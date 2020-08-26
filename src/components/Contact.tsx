@@ -11,7 +11,7 @@ function Alert(props: AlertProps) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
 }
 
-function Contact( {contactRef}: ISection ) {
+function Contact( {contactRef, translation}: ISection ) {
   const [name,    setName]    = useState("");
   const [email,   setEmail]   = useState("");
   const [message, setMessage] = useState("");
@@ -42,7 +42,7 @@ function Contact( {contactRef}: ISection ) {
   return (
     <section id="3" className="section contact" ref={contactRef}>
       <Typography variant="h2">
-        Contact
+        {translation.header}
       </Typography>
       <Typography variant="body1">
         <PhoneIcon className="contact__icon" /><a href="tel:+385 95 505 2586">+385 95 505 2586</a>
@@ -56,7 +56,7 @@ function Contact( {contactRef}: ISection ) {
       <form id="contact-form" className="contact__form" onSubmit={ el => handleSubmit(el) }>
         <TextField
           id="name"
-          label="Name"
+          label={translation.form.name}
           variant="outlined"
           value={name}
           required={true}
@@ -64,7 +64,7 @@ function Contact( {contactRef}: ISection ) {
         />
         <TextField 
           id="email"
-          label="Email"
+          label={translation.form.email}
           variant="outlined"
           type="email"
           value={email}
@@ -73,7 +73,7 @@ function Contact( {contactRef}: ISection ) {
         />
         <TextField
           id="message"
-          label="Message"
+          label={translation.form.message}
           variant="outlined"
           multiline
           rows={8}
@@ -84,7 +84,7 @@ function Contact( {contactRef}: ISection ) {
         <div className="contact__button-wrapper">
           <div className="contact__button-wrapper-inner">
             <Button type="submit" disabled={loading} className="contact__button button" color="primary" variant="contained" disableRipple={true}>
-              Send message
+              {translation.form.button}
             </Button>
             {loading && <CircularProgress size={24} className="contact__button-progress" />}
           </div>
