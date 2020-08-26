@@ -1,0 +1,58 @@
+{
+  "language": "Hrvatski",
+  "nav": {
+    "about": "O meni",
+    "skills": "Vještine",
+    "projects": "Projekti",
+    "contact": "Kontakt"
+  },
+  "about": {
+    "header": "O meni",
+    "paragraph": "I am a web developer from Croatia with a passion for technology. I am always looking for ways to improve myself in everything I do. I love challenging myself and I want to do interesting things that matter. My curent goal is becoming more proficient at fullstack web development."
+  },
+  "skills": {
+    "header": "Web development vještine",
+    "languages": "Jezici:",
+    "frameworks": "Programski okviri:",
+    "databases": "Baze podataka:",
+    "technologies": "Tehnologije:",
+    "bundlers": "Pakiranje:",
+    "tools": "Alati:"
+  },
+  "projects": {
+    "header": "Projekti",
+    "btnWebsite" : "Otvori Web stranicu",
+    "btnSource": "Izvorni kod",
+    "btnMore": "Više projekata",
+
+    "lavander": {
+      "header": "Lavander",
+      "paragraph": "Fullstack aplikacija za čavrljanje",
+      "alt": "Aplikacija za čavrljanje"
+    },
+    "itcomp": {
+      "header": "ITcomp",
+      "paragraph": "Staična web stranica",
+      "alt": "Staična web stranica"
+    },
+    "algovisualize": {
+      "header": "AlgoVisualize",
+      "paragraph": "Interaktivni breadth first search algoritam",
+      "alt": "Interaktivni algoritam"
+    },
+    "more": {
+      "header": "Više",
+      "paragraph": "Pogledajte više mojih projekata",
+      "alt": "Github"
+    }
+  },
+  "contact": {
+    "header": "Kontakt",
+    "form": {
+      "name": "Ime",
+      "email": "Email",
+      "message": "Poruka",
+      "button": "Pošalji Poruku"
+    }
+  }
+}

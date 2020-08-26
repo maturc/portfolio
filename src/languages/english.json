@@ -1,0 +1,58 @@
+{
+  "language": "English",
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "about": {
+    "header": "About",
+    "paragraph": "I am a web developer from Croatia with a passion for technology. I am always looking for ways to improve myself in everything I do. I love challenging myself and I want to do interesting things that matter. My curent goal is becoming more proficient at fullstack web development."
+  },
+  "skills": {
+    "header": "Web development skills",
+    "languages": "Languages:",
+    "frameworks": "Frameworks:",
+    "databases": "Databases:",
+    "technologies": "Technologies:",
+    "bundlers": "Bundlers:",
+    "tools": "Tools:"
+  },
+  "projects": {
+    "header": "Projects",
+    "btnWebsite" : "Open Website",
+    "btnSource": "Source Code",
+    "btnMore": "More Projects",
+
+    "lavander": {
+      "header": "Lavander",
+      "paragraph": "Fullstack chat application",
+      "alt": "Chat application"
+    },
+    "itcomp": {
+      "header": "ITcomp",
+      "paragraph": "Static website",
+      "alt": "Static website"
+    },
+    "algovisualize": {
+      "header": "AlgoVisualize",
+      "paragraph": "Interactive breadth first search algorithm",
+      "alt": "Interactive algorithm"
+    },
+    "more": {
+      "header": "More",
+      "paragraph": "Check out more of my projects",
+      "alt": "Github"
+    }
+  },
+  "contact": {
+    "header": "Contact",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "button": "Send Message"
+    }
+  }
+}
