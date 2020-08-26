@@ -7,7 +7,7 @@ function CardComponent( {imgUrl, imgAlt, title, body, websiteButton, sourceButto
     <Paper elevation={1} className="card">
       <img src={imgUrl} alt={imgAlt} className="card__img" />
       <div className="card__description">
-        <Typography variant="h5">
+        <Typography variant="h5" component="h3">
           {title}
         </Typography>
         <Typography variant="body1">
@@ -27,7 +27,8 @@ function CardComponent( {imgUrl, imgAlt, title, body, websiteButton, sourceButto
           <Button
             onClick={() => window.open(linkToSource, "_blank")}
             className="button"
-            color="primary" variant="contained"
+            color="primary"
+            variant="contained"
             disableRipple={true}
           >
             {linkToWebsite ? sourceButton : moreButton}
