@@ -21,7 +21,7 @@ function LanguageDropdown( {language, setLanguage}: any ) {
   return (
     <div className="language__dropdown">
       <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick} disableRipple={true} >
-        <LanguageIcon/>{language}<ExpandMoreIcon/>
+        <LanguageIcon/><span className="language__dropdown-lang">{language}</span><span className="language__dropdown-expand"><ExpandMoreIcon/></span>
       </Button>
       <Menu
         id="simple-menu"
