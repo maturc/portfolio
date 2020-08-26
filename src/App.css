@@ -130,6 +130,7 @@ h2 {
   min-width: 80px;
   display: inline-block;
   text-align: center;
+  font-weight: 500;
 }
 
 .skills > ul > ul > li > span + span {
@@ -265,6 +266,10 @@ h2 {
 .button:active {
   -webkit-transform: translateY(1px);
           transform: translateY(1px);
+}
+
+.button:focus {
+  background-color: #1d396a !important;
 }
 
 .about {
