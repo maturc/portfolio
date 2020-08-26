@@ -3,11 +3,16 @@ export type ICard = {
   imgAlt: string;
   title: string;
   body: string;
-  linkToWebsite: string;
+  websiteButton: string;
+  sourceButton: string;
+  moreButton?: string;
+  linkToWebsite?: string;
   linkToSource: string;
 }
 export type ISection = {
-  [name: string]: React.MutableRefObject<any>;
+  [name: string]: React.MutableRefObject<any> | any;
+  readonly translation?: any;
+  //this doesn't do anything, all of it is just <any> 🙂
 }
 export type INavbar = {
   aboutRefNav:    any;
@@ -18,6 +23,7 @@ export type INavbar = {
   skillsRef:   any;
   projectsRef: any;
   contactRef:  any;
+  translation: any;
 }
 export type ISendEmail = {
   (name: string, email: string, message: string, setOpenSuccess: React.Dispatch<React.SetStateAction<boolean>>, setOpenError: React.Dispatch<React.SetStateAction<boolean>>, setLoading: React.Dispatch<React.SetStateAction<boolean>>): void;
@@ -25,6 +31,3 @@ export type ISendEmail = {
 export type ISectionInView = {
   (sections: Array<HTMLElement>, navArray: Array<HTMLElement>): void;
 }
-
-
-
