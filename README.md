@@ -19,7 +19,7 @@ My web development portfolio
 ![croatian](https://github.com/maturc/portfolio/blob/master/preview/croatian.png)
 ![german](https://github.com/maturc/portfolio/blob/master/preview/german.png)
 #### Responsive design
-![responsive design](https://github.com/maturc/blob/master/portfolio/preview/mobile.png)
+![responsive design](https://github.com/maturc/portfolio/blob/master/preview/mobile.png)
 
 ##### How to start the application:
  * Clone this repository
