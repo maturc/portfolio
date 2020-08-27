@@ -11,15 +11,15 @@ My web development portfolio
 + jest
 
 ## Preview
-![about](https://github.com/maturc/portfolio/master/preview/about.png)
-![skills](https://github.com/maturc/portfolio/master/preview/skills.png)
-![projects](https://github.com/maturc/portfolio/master/preview/projects.png)
-![contact](https://github.com/maturc/portfolio/master/preview/contact.png)
+![about](https://github.com/maturc/portfolio/blob/master/preview/about.png)
+![skills](https://github.com/maturc/portfolio/blob/master/preview/skills.png)
+![projects](https://github.com/maturc/portfolio/blob/master/preview/projects.png)
+![contact](https://github.com/maturc/portfolio/blob/master/preview/contact.png)
 #### Multiple languages
-![croatian](https://github.com/maturc/portfolio/master/preview/croatian.png)
-![german](https://github.com/maturc/portfolio/master/preview/german.png)
+![croatian](https://github.com/maturc/portfolio/blob/master/preview/croatian.png)
+![german](https://github.com/maturc/portfolio/blob/master/preview/german.png)
 #### Responsive design
-![responsive design](https://github.com/maturc/master/portfolio/preview/mobile.png)
+![responsive design](https://github.com/maturc/blob/master/portfolio/preview/mobile.png)
 
 ##### How to start the application:
  * Clone this repository
