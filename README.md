@@ -1,4 +1,4 @@
-https://maturc.github.io/portfolio
+https://maturc.github.io/portfolio/
 
 ### `npm start`
 
