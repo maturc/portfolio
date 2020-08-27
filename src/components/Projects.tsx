@@ -1,8 +1,9 @@
 import React from 'react';
 import CardComponent from './CardComponent';
-import lavander from '../assets/lavander.png';
-import itcomp from '../assets/itcomp.png';
-import algovisualize from '../assets/algovisualize.png';
+import lavander from '../assets/lavander-small.jpg';
+import itcomp from '../assets/itcomp-small.jpg';
+import algovisualize from '../assets/algovisualize-small.jpg';
+import github from '../assets/github-small.jpg';
 import { Typography } from '@material-ui/core';
 import { ISection } from '../interfaces';
 
@@ -49,7 +50,7 @@ function Projects( {projectsRef, translation}:ISection ) {
           linkToSource="https://github.com/maturc/algo-visualize"
         />
         <CardComponentExpanded
-          imgUrl={lavander}
+          imgUrl={github}
           translation={translation}
           projectName={translation.more}
           moreButton={translation.btnMore}
