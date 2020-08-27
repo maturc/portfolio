@@ -8,7 +8,7 @@
   },
   "about": {
     "header": "O meni",
-    "paragraph": "I am a web developer from Croatia with a passion for technology. I am always looking for ways to improve myself in everything I do. I love challenging myself and I want to do interesting things that matter. My curent goal is becoming more proficient at fullstack web development."
+    "paragraph": "Ja sam web programer iz Hrvatske sa strašću prema tehnologiji. Uvijek tražim načine na koje se mogu poboljšati u svemu što radim. Volim izazove i želim raditi na zanimljivim projektima velike važnosti. Moj trenutni cilj je postati iskusniji u fullstack web razvoju."
   },
   "skills": {
     "header": "Web development vještine",
@@ -41,7 +41,7 @@
       "alt": "Interaktivni algoritam"
     },
     "more": {
-      "header": "Više",
+      "header": "Više projekata",
       "paragraph": "Pogledajte više mojih projekata",
       "alt": "Github"
     }

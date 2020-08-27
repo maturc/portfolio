@@ -8,7 +8,7 @@
   },
   "about": {
     "header": "About",
-    "paragraph": "I am a web developer from Croatia with a passion for technology. I am always looking for ways to improve myself in everything I do. I love challenging myself and I want to do interesting things that matter. My curent goal is becoming more proficient at fullstack web development."
+    "paragraph": "I am a web developer from Croatia with a passion for technology. I am always looking for ways to improve myself in everything I do. I love challenging myself and I want to do interesting things that matter. My current goal is becoming more proficient at fullstack web development."
   },
   "skills": {
     "header": "Web development skills",
@@ -41,7 +41,7 @@
       "alt": "Interactive algorithm"
     },
     "more": {
-      "header": "More",
+      "header": "More projects",
       "paragraph": "Check out more of my projects",
       "alt": "Github"
     }
