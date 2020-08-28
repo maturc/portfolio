@@ -9,11 +9,11 @@ import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import useSectionInView from './hooks/useSectionInView';
 import LanguageDropdown from './components/LanguageDropdown';
-import english from './languages/english.json';
+import hrvatski from './languages/hrvatski.json';
 
 function App() {
   //language
-  const [language, setLanguage] = useState(english);
+  const [language, setLanguage] = useState(hrvatski);
 
   const [sectionArray, setSectionArray] = useState<Array<HTMLElement>>([]);
   const [navArray, setNavArray] = useState<Array<HTMLElement>>([]);
