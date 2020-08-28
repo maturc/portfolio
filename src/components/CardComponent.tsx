@@ -3,6 +3,10 @@ import { Paper, Typography, Button } from '@material-ui/core';
 import { ICard } from '../interfaces';
 
 function CardComponent( {imgUrl, imgAlt, title, body, websiteButton, sourceButton, moreButton, linkToWebsite, linkToSource}: ICard ) {
+  function handleClick( link: string ) {
+    (document.activeElement as any).blur();
+    window.open(link, "_blank");
+  }
   return (
     <Paper elevation={1} className="card">
       <img src={imgUrl} alt={imgAlt} className="card__img" />
@@ -16,7 +20,7 @@ function CardComponent( {imgUrl, imgAlt, title, body, websiteButton, sourceButto
         <div className="card__buttons">
           { linkToWebsite &&
             <Button
-              onClick={() => window.open(linkToWebsite, "_blank")}
+              onClick={() => handleClick( linkToWebsite )}
               className="button"
               color="primary" variant="contained"
               disableRipple={true}
@@ -25,7 +29,7 @@ function CardComponent( {imgUrl, imgAlt, title, body, websiteButton, sourceButto
             </Button>
           }
           <Button
-            onClick={() => window.open(linkToSource, "_blank")}
+            onClick={() => handleClick( linkToSource )}
             className="button"
             color="primary"
             variant="contained"

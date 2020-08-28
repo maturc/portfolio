@@ -4,6 +4,7 @@ import { INavbar } from '../interfaces';
 function Navbar( {aboutRefNav, skillsRefNav, projectsRefNav, contactRefNav, aboutRef, skillsRef, projectsRef, contactRef, translation}: INavbar ) {
   function handleClick( e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, refObject: React.MutableRefObject<any> ) {
     e.preventDefault();
+    (e.target as HTMLElement).blur();
     refObject.current.scrollIntoView({behavior: "smooth"});
   }
 
