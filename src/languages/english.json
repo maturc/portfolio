@@ -22,7 +22,7 @@
   "projects": {
     "header": "Projects",
     "btnWebsite" : "Open Website",
-    "btnSource": "Source Code",
+    "btnSource": "Source Code and description",
     "btnMore": "More Projects",
 
     "lavander": {

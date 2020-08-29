@@ -22,7 +22,7 @@
   "projects": {
     "header": "Projekte",
     "btnWebsite" : "Website öffnen",
-    "btnSource": "Quellcode",
+    "btnSource": "Quellcode und Beschreibung",
     "btnMore": "Mehr Projekte",
 
     "lavander": {
