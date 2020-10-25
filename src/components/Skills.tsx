@@ -18,7 +18,7 @@ function Skills( {skillsRef, translation}: ISection ) {
         <li>{translation.frameworks}</li>
         <li>
           <ul>
-            <li><span>React</span> <span>Express</span> <span>Material UI</span></li>
+            <li><span>React</span> <span>Angular</span> <span>Express</span> <span>Material UI</span> <span>Bootstrap</span></li>
           </ul>
         </li>
         <li>{translation.databases}</li>
