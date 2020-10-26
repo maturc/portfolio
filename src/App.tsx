@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import useSectionInView from './hooks/useSectionInView';
 import LanguageDropdown from './components/LanguageDropdown';
+import SvgAnimation from './components/SvgAnimation';
 //languages
 import english from './languages/english.json';
 //import hrvatski from './languages/hrvatski.json';
@@ -55,13 +56,14 @@ function App() {
           contactRef={contactRef}
           translation={language.nav}
         />
+
+        <SvgAnimation/>
         <div style={{height: "15vh", width: "100%"}}></div>
+        
         <About    aboutRef={aboutRef}       translation={language.about} />
         <Skills   skillsRef={skillsRef}     translation={language.skills} />
         <Projects projectsRef={projectsRef} translation={language.projects} />
         <Contact  contactRef={contactRef}   translation={language.contact} />
-        {/* footer?? - quick nav links? created by and stuff??
-        back to top button? */}
       </Container>
     </>
   );
