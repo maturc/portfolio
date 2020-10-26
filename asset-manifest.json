@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a2a45ae6.chunk.css",
-    "main.js": "/portfolio/static/js/main.7e312895.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.7e312895.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.e859b00e.chunk.css",
+    "main.js": "/portfolio/static/js/main.dc4dc080.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.dc4dc080.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.f1bc2f96.chunk.js": "/portfolio/static/js/2.f1bc2f96.chunk.js",
-    "static/js/2.f1bc2f96.chunk.js.map": "/portfolio/static/js/2.f1bc2f96.chunk.js.map",
+    "static/js/2.7f7cec02.chunk.js": "/portfolio/static/js/2.7f7cec02.chunk.js",
+    "static/js/2.7f7cec02.chunk.js.map": "/portfolio/static/js/2.7f7cec02.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.1e6c6e968227523f4890b201f39e8782.js": "/portfolio/precache-manifest.1e6c6e968227523f4890b201f39e8782.js",
+    "precache-manifest.d82b55dc155c6a2cf048184f9d93da20.js": "/portfolio/precache-manifest.d82b55dc155c6a2cf048184f9d93da20.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.a2a45ae6.chunk.css.map": "/portfolio/static/css/main.a2a45ae6.chunk.css.map",
-    "static/js/2.f1bc2f96.chunk.js.LICENSE.txt": "/portfolio/static/js/2.f1bc2f96.chunk.js.LICENSE.txt",
+    "static/css/main.e859b00e.chunk.css.map": "/portfolio/static/css/main.e859b00e.chunk.css.map",
+    "static/js/2.7f7cec02.chunk.js.LICENSE.txt": "/portfolio/static/js/2.7f7cec02.chunk.js.LICENSE.txt",
     "static/media/algovisualize-small.jpg": "/portfolio/static/media/algovisualize-small.01db26ae.jpg",
     "static/media/github-small.jpg": "/portfolio/static/media/github-small.a84765b4.jpg",
     "static/media/itcomp-small.jpg": "/portfolio/static/media/itcomp-small.e11a84dc.jpg",
-    "static/media/lavander-small.jpg": "/portfolio/static/media/lavander-small.6ccb067f.jpg"
+    "static/media/lavander-small.jpg": "/portfolio/static/media/lavander-small.6ccb067f.jpg",
+    "static/media/portfolio.f706ab76.svg": "/portfolio/static/media/portfolio.f706ab76.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.f1bc2f96.chunk.js",
-    "static/css/main.a2a45ae6.chunk.css",
-    "static/js/main.7e312895.chunk.js"
+    "static/js/2.7f7cec02.chunk.js",
+    "static/css/main.e859b00e.chunk.css",
+    "static/js/main.dc4dc080.chunk.js"
   ]
 }
