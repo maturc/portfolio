@@ -57,7 +57,7 @@ function App() {
           translation={language.nav}
         />
 
-        <SvgAnimation/>
+        <SvgAnimation />
         <div style={{height: "15vh", width: "100%"}}></div>
         
         <About    aboutRef={aboutRef}       translation={language.about} />

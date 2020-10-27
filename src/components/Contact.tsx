@@ -6,6 +6,7 @@ import MuiAlert, { AlertProps } from '@material-ui/lab/Alert';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import PhoneIcon from '@material-ui/icons/Phone';
+import SvgMail from './SvgMail';
 
 function Alert(props: AlertProps) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -100,6 +101,9 @@ function Contact( {contactRef, translation}: ISection ) {
           Error sending message!
         </Alert>
       </Snackbar>
+      <div style={{position: "absolute"}}>
+          <SvgMail />
+        </div>
     </section>
   );
 }

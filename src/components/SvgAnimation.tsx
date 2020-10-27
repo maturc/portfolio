@@ -1,6 +1,6 @@
 import React from 'react';
 import {ReactComponent as Svg} from '../assets/portfolio.svg';
-import '../SvgAnimation.css';
+import '../styles/SvgAnimation.css';
 
 function SvgAnimation() {
   return (
