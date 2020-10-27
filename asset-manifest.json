@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.aa0e73fb.chunk.css",
-    "main.js": "/portfolio/static/js/main.6206582f.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.6206582f.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.177e22d1.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.177e22d1.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/js/2.1dcf192c.chunk.js": "/portfolio/static/js/2.1dcf192c.chunk.js",
     "static/js/2.1dcf192c.chunk.js.map": "/portfolio/static/js/2.1dcf192c.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.90ee6e9e36a09b392b443d0e30a45908.js": "/portfolio/precache-manifest.90ee6e9e36a09b392b443d0e30a45908.js",
+    "precache-manifest.30745a1ad43b442d801434941fc77b1a.js": "/portfolio/precache-manifest.30745a1ad43b442d801434941fc77b1a.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.aa0e73fb.chunk.css.map": "/portfolio/static/css/main.aa0e73fb.chunk.css.map",
     "static/js/2.1dcf192c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.1dcf192c.chunk.js.LICENSE.txt",
-    "static/media/algovisualize-small.jpg": "/portfolio/static/media/algovisualize-small.01db26ae.jpg",
-    "static/media/github-small.jpg": "/portfolio/static/media/github-small.a84765b4.jpg",
-    "static/media/itcomp-small.jpg": "/portfolio/static/media/itcomp-small.e11a84dc.jpg",
-    "static/media/lavander-small.jpg": "/portfolio/static/media/lavander-small.6ccb067f.jpg",
+    "static/media/algovisualize-small.webp": "/portfolio/static/media/algovisualize-small.c522e425.webp",
+    "static/media/github-small.webp": "/portfolio/static/media/github-small.dc6c4f3c.webp",
+    "static/media/itcomp-small.webp": "/portfolio/static/media/itcomp-small.d8ef3542.webp",
+    "static/media/lavander-small.webp": "/portfolio/static/media/lavander-small.427b5f39.webp",
     "static/media/mail.11b2f9bf.svg": "/portfolio/static/media/mail.11b2f9bf.svg",
     "static/media/portfolio.f706ab76.svg": "/portfolio/static/media/portfolio.f706ab76.svg"
   },
@@ -23,6 +23,6 @@
     "static/js/runtime-main.209c2d7e.js",
     "static/js/2.1dcf192c.chunk.js",
     "static/css/main.aa0e73fb.chunk.css",
-    "static/js/main.6206582f.chunk.js"
+    "static/js/main.177e22d1.chunk.js"
   ]
 }
