@@ -1,9 +1,9 @@
 import React from 'react';
 import CardComponent from './CardComponent';
-import lavander from '../assets/lavander-small.jpg';
-import itcomp from '../assets/itcomp-small.jpg';
-import algovisualize from '../assets/algovisualize-small.jpg';
-import github from '../assets/github-small.jpg';
+import lavander from '../assets/lavander-small.webp';
+import itcomp from '../assets/itcomp-small.webp';
+import algovisualize from '../assets/algovisualize-small.webp';
+import github from '../assets/github-small.webp';
 import { Typography } from '@material-ui/core';
 import { ISection } from '../interfaces';
 
