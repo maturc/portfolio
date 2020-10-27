@@ -1,0 +1,19 @@
+.mail
+  animation: tilt 6s ease-in-out infinite alternate
+  transform-origin: bottom
+  width: 200px
+  height: auto
+  position: relative
+  right: -700px
+  top: -260px
+  @media only screen and (max-width: 961px)
+    width: 160px
+    right: -630px
+  @media only screen and (max-width: 839px)
+    display: none
+
+@keyframes tilt
+  from
+    transform: rotateZ(-2deg)
+  to
+    transform: rotateZ(2deg)

@@ -1,0 +1,47 @@
+.mail {
+  -webkit-animation: tilt 6s ease-in-out infinite alternate;
+          animation: tilt 6s ease-in-out infinite alternate;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  width: 200px;
+  height: auto;
+  position: relative;
+  right: -700px;
+  top: -260px;
+}
+
+@media only screen and (max-width: 961px) {
+  .mail {
+    width: 160px;
+    right: -630px;
+  }
+}
+
+@media only screen and (max-width: 839px) {
+  .mail {
+    display: none;
+  }
+}
+
+@-webkit-keyframes tilt {
+  from {
+    -webkit-transform: rotateZ(-2deg);
+            transform: rotateZ(-2deg);
+  }
+  to {
+    -webkit-transform: rotateZ(2deg);
+            transform: rotateZ(2deg);
+  }
+}
+
+@keyframes tilt {
+  from {
+    -webkit-transform: rotateZ(-2deg);
+            transform: rotateZ(-2deg);
+  }
+  to {
+    -webkit-transform: rotateZ(2deg);
+            transform: rotateZ(2deg);
+  }
+}
+/*# sourceMappingURL=SvgMail.css.map */
