@@ -20,7 +20,7 @@
     "tools": "Tools:"
   },
   "projects": {
-    "header": "Projects",
+    "header": "Recent projects",
     "btnWebsite" : "Open Website",
     "btnSource": "Source Code and description",
     "btnMore": "More Projects",
