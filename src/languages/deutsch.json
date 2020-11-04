@@ -44,6 +44,16 @@
       "header": "Mehr Projekte",
       "paragraph": "Schauen Sie sich mehr von meiner Projekte an",
       "alt": "Github"
+    },
+    "trafalgar": {
+      "header": "Trafalgar",
+      "paragraph": "Statische Website - WORK IN PROGRESS",
+      "alt": "Trafalgar"
+    },
+    "portfolio": {
+      "header": "Portfolio",
+      "paragraph": "Portfolio website",
+      "alt": "Portfolio"
     }
   },
   "contact": {

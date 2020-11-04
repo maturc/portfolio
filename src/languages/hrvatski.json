@@ -44,6 +44,16 @@
       "header": "Više projekata",
       "paragraph": "Pogledajte više mojih projekata",
       "alt": "Github"
+    },
+    "trafalgar": {
+      "header": "Trafalgar",
+      "paragraph": "Staična web stranica, izrada prema postojećem dizajnu - WORK IN PROGRESS",
+      "alt": "Trafalgar"
+    },
+    "portfolio": {
+      "header": "Portfolio",
+      "paragraph": "Portfolio web stranica",
+      "alt": "Portfolio"
     }
   },
   "contact": {

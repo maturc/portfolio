@@ -4,6 +4,8 @@ import lavander from '../assets/lavander-small.webp';
 import itcomp from '../assets/itcomp-small.webp';
 import algovisualize from '../assets/algovisualize-small.webp';
 import github from '../assets/github-small.webp';
+import trafalgar from '../assets/trafalgar-small.webp';
+import portfolio from '../assets/portfolio-small.webp';
 import { Typography } from '@material-ui/core';
 import { ISection } from '../interfaces';
 
@@ -36,6 +38,13 @@ function Projects( {projectsRef, translation}:ISection ) {
           linkToSource="https://github.com/maturc/lavander"
         />
         <CardComponentExpanded
+          imgUrl={trafalgar}
+          translation={translation}
+          projectName={translation.trafalgar}
+          linkToWebsite="https://maturc.github.io/trafalgar"
+          linkToSource="https://github.com/maturc/trafalgar"
+        />
+        <CardComponentExpanded
           imgUrl={itcomp}
           translation={translation}
           projectName={translation.itcomp}
@@ -48,6 +57,13 @@ function Projects( {projectsRef, translation}:ISection ) {
           projectName={translation.algovisualize}
           linkToWebsite="https://maturc.github.io/algo-visualize/index"
           linkToSource="https://github.com/maturc/algo-visualize"
+        />
+        <CardComponentExpanded
+          imgUrl={portfolio}
+          translation={translation}
+          projectName={translation.portfolio}
+          linkToWebsite="https://maturc.github.io/portfolio"
+          linkToSource="https://github.com/maturc/portfolio"
         />
         <CardComponentExpanded
           imgUrl={github}
