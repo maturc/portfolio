@@ -6,6 +6,7 @@ import MuiAlert, { AlertProps } from '@material-ui/lab/Alert';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import PhoneIcon from '@material-ui/icons/Phone';
+import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import SvgMail from './SvgMail';
 
 function Alert(props: AlertProps) {
@@ -50,6 +51,9 @@ function Contact( {contactRef, translation}: ISection ) {
       </Typography>
       <Typography variant="body1">
         <MailOutlineIcon className="contact__icon" /><a href="mailto:turcec.matija@gmail.com">turcec.matija@gmail.com</a>
+      </Typography>
+      <Typography variant="body1">
+        <LibraryBooksIcon className="contact__icon" /><a href="https://dev.to/maturc">https://dev.to/maturc</a>
       </Typography>
       <Typography variant="body1">
         <GitHubIcon className="contact__icon" /><a href="https://github.com/maturc">https://github.com/maturc</a>
