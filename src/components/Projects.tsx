@@ -70,7 +70,7 @@ function Projects( {projectsRef, translation}:ISection ) {
           translation={translation}
           projectName={translation.more}
           moreButton={translation.btnMore}
-          linkToSource="https://github.com/maturc/WebDev-practice-projects"
+          linkToSource="https://github.com/maturc?tab=repositories"
         />
       </div>
     </section>
